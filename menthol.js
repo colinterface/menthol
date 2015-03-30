@@ -2,10 +2,7 @@ var colors = require('colors');
 
 var username = ''; // mint email goes here
 var password = ''; // mint password goes here
-var goalAmount = 1000000; // how much money you'd like to have
-
-
-var balance = 0; // don't change this
+var goalAmount = 5000; // how much money you'd like to have
 
 console.log('counting your money...'.grey);
 
@@ -16,6 +13,8 @@ require('pepper-mint')(username, password)
   return mint.getAccounts();
 })
 .then(function(accounts) {
+
+  var balance = 0;
 
   // add up balances of objects in the accounts array     
   accounts.forEach(function(account) {
@@ -33,7 +32,7 @@ require('pepper-mint')(username, password)
   console.log(congrats(balance).grey);
 })
 .fail(function(err) {
-  console.error("aww rats! [>_<] can't access mint account!", err);
+  console.error("aww rats! [>_<] can't access mint account!\n".red, err);
 });
 
 
