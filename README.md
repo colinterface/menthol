@@ -5,6 +5,6 @@ If you wanna be really cool you can use an alias to run it. Just open up ` ~/.ba
 ```
 alias money='node /Users/coolperson/menthol/menthol.js'
 ```
-Save the file and make bash aware of the changes by executing it: `source ~/.bash_profile`
+Save the file and make bash aware of the changes by executing it with `source ~/.bash_profile`
 
-Now you can just enter `money` from any directory and the code will run.
+Now you can just do `money` from any directory and the code will run.
