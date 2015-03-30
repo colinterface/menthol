@@ -1,9 +1,5 @@
 # menthol
-a fun little command line tool for seeing how much money you have
-
-- Uses [pepper-mint](https://github.com/dhleong/pepper-mint) to access your mint account and displays the total
-- Allows you to set a goal amount and displays your percentage
-
+A fun little command line tool for seeing how much money you have. Uses [pepper-mint](https://github.com/dhleong/pepper-mint) to access your mint account and displays the total of all account ballances (including credit cards if you want). Allows you to set a goal amount and displays the percentage of the goal represented by your balance.
 
 If you wanna be really cool you can use an alias to run it. Just open up ` ~/.bash_profile` and add this line using the correct path to the menthol directory.
 ```
